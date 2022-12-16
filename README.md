@@ -20,3 +20,14 @@ Explain the algorithm you choose
 Explain hyper-parameter of the function
 : n_restarts_optimizer = 5, max_iter_predict = 10, random_state = 3, copy_X_train = True, warm_start = True
 I think 5 optimizers are enough even though it's basic setting, and max_iter_predict can cause quite a lot of time to calculate, so I decide number as 10.
+
+2022.12.16
+Explain what you do in your project
+: Finally, I decide use MLPClassifier as model to classify brain tumor datasets.
+Explain the training dataset
+: I just used datasets of brain_tumor which I received, and by the ratio of 7:3, split data as train : test
+Explain the algorithm you choose
+: MLPClassifier is relatively known less, and it atracts me because of its possibility of modification by using different hyper parameters.
+Explain hyper-parameter of the function
+: solver='lbfgs' and max_fun are kinda set, and I searched many reference and codes, I think hidden_layer_size = (10,) is best.
+activation = 'logistic' is just result of many trials and it was best idea for me.
